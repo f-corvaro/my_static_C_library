@@ -7,6 +7,7 @@
 	- [About](#about)
 	- [Running tests and features](#running-tests-and-features)
 	- [Folder Structure](#folder-structure)
+	- [Author](#author)
 	- [Support Me](#support-me)
 	- [License](#license)
 
