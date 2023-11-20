@@ -120,12 +120,10 @@ This is the folder structure after the compiling:
 │   ├── build
 │   │   └── libftprintf.a
 │   ├── include
-│   │   └── ft_printf.h
 │   ├── libft
 │   │   ├── build
 │   │   │   └── libft.a
 │   │   ├── include
-│   │   │   └── libft.h
 │   │   ├── objs
 │   │   │   ├── ft_atoi.o
 │   │   │   ├── ft_bzero.o
@@ -173,51 +171,6 @@ This is the folder structure after the compiling:
 │   │   │   ├── get_next_line_bonus.o
 │   │   │   └── get_next_line_utils_bonus.o
 │   │   ├── srcs
-│   │   │   ├── ft_atoi.c
-│   │   │   ├── ft_bzero.c
-│   │   │   ├── ft_calloc.c
-│   │   │   ├── ft_isalnum.c
-│   │   │   ├── ft_isalpha.c
-│   │   │   ├── ft_isascii.c
-│   │   │   ├── ft_isdigit.c
-│   │   │   ├── ft_isprint.c
-│   │   │   ├── ft_itoa.c
-│   │   │   ├── ft_lstadd_back.c
-│   │   │   ├── ft_lstadd_front.c
-│   │   │   ├── ft_lstclear.c
-│   │   │   ├── ft_lstdelone.c
-│   │   │   ├── ft_lstiter.c
-│   │   │   ├── ft_lstlast.c
-│   │   │   ├── ft_lstmap.c
-│   │   │   ├── ft_lstnew.c
-│   │   │   ├── ft_lstsize.c
-│   │   │   ├── ft_memchr.c
-│   │   │   ├── ft_memcmp.c
-│   │   │   ├── ft_memcpy.c
-│   │   │   ├── ft_memmove.c
-│   │   │   ├── ft_memset.c
-│   │   │   ├── ft_putchar_fd.c
-│   │   │   ├── ft_putendl_fd.c
-│   │   │   ├── ft_putnbr_fd.c
-│   │   │   ├── ft_putstr_fd.c
-│   │   │   ├── ft_split.c
-│   │   │   ├── ft_strchr.c
-│   │   │   ├── ft_strdup.c
-│   │   │   ├── ft_striteri.c
-│   │   │   ├── ft_strjoin.c
-│   │   │   ├── ft_strlcat.c
-│   │   │   ├── ft_strlcpy.c
-│   │   │   ├── ft_strlen.c
-│   │   │   ├── ft_strmapi.c
-│   │   │   ├── ft_strncmp.c
-│   │   │   ├── ft_strnstr.c
-│   │   │   ├── ft_strrchr.c
-│   │   │   ├── ft_strtrim.c
-│   │   │   ├── ft_substr.c
-│   │   │   ├── ft_tolower.c
-│   │   │   ├── ft_toupper.c
-│   │   │   ├── get_next_line_bonus.c
-│   │   │   └── get_next_line_utils_bonus.c
 │   │   └── Makefile
 │   ├── objs
 │   │   ├── ft_format.o
@@ -227,14 +180,21 @@ This is the folder structure after the compiling:
 │   │   ├── ft_ptr.o
 │   │   └── ft_utility_funcs.o
 │   ├── srcs
-│   │   ├── ft_format.c
-│   │   ├── ft_parse_and_handle_funcs.c
-│   │   ├── ft_printf_funcs.c
-│   │   ├── ft_printf.c
-│   │   ├── ft_ptr.c
-│   │   └── ft_utility_funcs.c
 │   └── Makefile
 ```
+
+<br>
+
+## Author
+
+<p align="center"><a href="https://profile.intra.42.fr/users/fcorvaro"><img style="height:auto;" src="https://avatars.githubusercontent.com/u/102758065?v=4" width="100" height="100"alt=""></a>
+<p align="center">
+<a href="mailto:fcorvaro@student.42roma.it"><kbd>Email</kbd><alt=""></a>
+<a href="https://github.com/f-corvaro"><kbd>Github</kbd><alt=""></a>
+<a href="https://www.linkedin.com/in/f-corvaro/"><kbd>Linkedin</kbd><alt=""></a>
+<a href="https://42born2code.slack.com/team/U050L8XAFLK"><kbd>Slack</kbd><alt=""></a>
+
+<hr/>
 
 <br>
 
