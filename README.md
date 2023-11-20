@@ -2,9 +2,48 @@
 
 ### Index
 
+- [**My Static C Library**](#my-static-c-library)
+		- [Index](#index)
+	- [About](#about)
+	- [Running tests and features](#running-tests-and-features)
+	- [Folder Structure](#folder-structure)
+	- [Support Me](#support-me)
+	- [License](#license)
+
+## About
+
+<p align="justify">
+
+This is my static library, which encompasses the 42's project: get_next_line (only the bonus functions), ft_printf (with all format bonuses), and libft (with bonus functions). Furthermore, I have defined my bool and other useful things that you can check into the code. All the functions have a comment to explain what they do. From the terminal, in the lib path, you can run the command ```make help``` to get an overview of the available commands in this library.
+
+<p>
+<br>
+
+## Running tests and features
+
+<a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="make" width="650" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/compile.gif">
+
+<a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="comment" width="650" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/about.gif">
+
+
+<br>
 
 
 ## Folder Structure
+
+<p align="justify">
+
+The folder structure is very easy, and the Makefile is made with the purpose of having repeatable and easily implemented rules.
+
+- All the sources are stored in the srcs folder.
+
+- The header is stored in the include folder.
+
+- The library.a is stored in the build folder.
+
+- The files.o are stored in  the objs folder.
+
+The last two folders and files are created only after compiling.
 
 This is the folder structure before compiling:
 
@@ -197,13 +236,6 @@ This is the folder structure after the compiling:
 │   └── Makefile
 ```
 
-<br>
-
-## About
-
-<p align="justify">
-
-<p>
 <br>
 
 ## Support Me
