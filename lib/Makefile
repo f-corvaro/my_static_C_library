@@ -6,7 +6,7 @@
 #    By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/11 20:48:47 by fcorvaro          #+#    #+#              #
-#    Updated: 2023/11/20 10:17:05 by fcorvaro         ###   ########.fr        #
+#    Updated: 2023/11/20 10:47:34 by fcorvaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -144,7 +144,7 @@ help:
 	@echo "	$(START)$(BOLD);$(ITALIC);$(M)mfcorvaro's library: This is a special library that include libft, get_next_line and ft_printf.$(END)"
 	@echo
 	@echo "	$(START)$(BOLD);$(ITALIC);$(Y)mmake [help | all | bonus | clean | fclean | re]$(END)"
-	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mall: compile the library and obtain libft.a. This is comprehends get_next_line bonus$(END)"
+	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mall: compile the library and obtain libftprintf.a$(END)"
 	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mbonus: do the same thing of re, bonus functions are included in the mandatory project$(END)"
 	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mclean: remove object files$(END)"
 	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mfclean: remove object files and archive library$(END)"

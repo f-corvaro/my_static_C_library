@@ -1,2 +1,226 @@
-# my_static_C_library
-My static C library comprehends the 42's project: get_next_line (the bonus functions), ft_printf (with all format bonuses) and libft (with bonus functions). Furthermore, I have defined my bool and other useful things. All the functions have a comment to explain what they do.
+# **My Static C Library**
+
+### Index
+
+
+
+## Folder Structure
+
+This is the folder structure before compiling:
+
+```
+.
+├─ lib
+├── include
+│   └── ft_printf.h
+├── libft
+│   ├── include
+│   │   └── libft.h
+│   ├── srcs
+│   │   ├── ft_atoi.c
+│   │   ├── ft_bzero.c
+│   │   ├── ft_calloc.c
+│   │   ├── ft_isalnum.c
+│   │   ├── ft_isalpha.c
+│   │   ├── ft_isascii.c
+│   │   ├── ft_isdigit.c
+│   │   ├── ft_isprint.c
+│   │   ├── ft_itoa.c
+│   │   ├── ft_lstadd_back.c
+│   │   ├── ft_lstadd_front.c
+│   │   ├── ft_lstclear.c
+│   │   ├── ft_lstdelone.c
+│   │   ├── ft_lstiter.c
+│   │   ├── ft_lstlast.c
+│   │   ├── ft_lstmap.c
+│   │   ├── ft_lstnew.c
+│   │   ├── ft_lstsize.c
+│   │   ├── ft_memchr.c
+│   │   ├── ft_memcmp.c
+│   │   ├── ft_memcpy.c
+│   │   ├── ft_memmove.c
+│   │   ├── ft_memset.c
+│   │   ├── ft_putchar_fd.c
+│   │   ├── ft_putendl_fd.c
+│   │   ├── ft_putnbr_fd.c
+│   │   ├── ft_putstr_fd.c
+│   │   ├── ft_split.c
+│   │   ├── ft_strchr.c
+│   │   ├── ft_strdup.c
+│   │   ├── ft_striteri.c
+│   │   ├── ft_strjoin.c
+│   │   ├── ft_strlcat.c
+│   │   ├── ft_strlcpy.c
+│   │   ├── ft_strlen.c
+│   │   ├── ft_strmapi.c
+│   │   ├── ft_strncmp.c
+│   │   ├── ft_strnstr.c
+│   │   ├── ft_strrchr.c
+│   │   ├── ft_strtrim.c
+│   │   ├── ft_substr.c
+│   │   ├── ft_tolower.c
+│   │   ├── ft_toupper.c
+│   │   ├── get_next_line_bonus.c
+│   │   └── get_next_line_utils_bonus.c
+│   └── Makefile
+├── srcs
+│   ├── ft_format.c
+│   ├── ft_parse_and_handle_funcs.c
+│   ├── ft_printf_funcs.c
+│   ├── ft_printf.c
+│   ├── ft_ptr.c
+│   └── ft_utility_funcs.c
+└── Makefile
+```
+
+This is the folder structure after the compiling:
+
+```
+.
+├── lib
+│   ├── build
+│   │   └── libftprintf.a
+│   ├── include
+│   │   └── ft_printf.h
+│   ├── libft
+│   │   ├── build
+│   │   │   └── libft.a
+│   │   ├── include
+│   │   │   └── libft.h
+│   │   ├── objs
+│   │   │   ├── ft_atoi.o
+│   │   │   ├── ft_bzero.o
+│   │   │   ├── ft_calloc.o
+│   │   │   ├── ft_isalnum.o
+│   │   │   ├── ft_isalpha.o
+│   │   │   ├── ft_isascii.o
+│   │   │   ├── ft_isdigit.o
+│   │   │   ├── ft_isprint.o
+│   │   │   ├── ft_itoa.o
+│   │   │   ├── ft_lstadd_back.o
+│   │   │   ├── ft_lstadd_front.o
+│   │   │   ├── ft_lstclear.o
+│   │   │   ├── ft_lstdelone.o
+│   │   │   ├── ft_lstiter.o
+│   │   │   ├── ft_lstlast.o
+│   │   │   ├── ft_lstmap.o
+│   │   │   ├── ft_lstnew.o
+│   │   │   ├── ft_lstsize.o
+│   │   │   ├── ft_memchr.o
+│   │   │   ├── ft_memcmp.o
+│   │   │   ├── ft_memcpy.o
+│   │   │   ├── ft_memmove.o
+│   │   │   ├── ft_memset.o
+│   │   │   ├── ft_putchar_fd.o
+│   │   │   ├── ft_putendl_fd.o
+│   │   │   ├── ft_putnbr_fd.o
+│   │   │   ├── ft_putstr_fd.o
+│   │   │   ├── ft_split.o
+│   │   │   ├── ft_strchr.o
+│   │   │   ├── ft_strdup.o
+│   │   │   ├── ft_striteri.o
+│   │   │   ├── ft_strjoin.o
+│   │   │   ├── ft_strlcat.o
+│   │   │   ├── ft_strlcpy.o
+│   │   │   ├── ft_strlen.o
+│   │   │   ├── ft_strmapi.o
+│   │   │   ├── ft_strncmp.o
+│   │   │   ├── ft_strnstr.o
+│   │   │   ├── ft_strrchr.o
+│   │   │   ├── ft_strtrim.o
+│   │   │   ├── ft_substr.o
+│   │   │   ├── ft_tolower.o
+│   │   │   ├── ft_toupper.o
+│   │   │   ├── get_next_line_bonus.o
+│   │   │   └── get_next_line_utils_bonus.o
+│   │   ├── srcs
+│   │   │   ├── ft_atoi.c
+│   │   │   ├── ft_bzero.c
+│   │   │   ├── ft_calloc.c
+│   │   │   ├── ft_isalnum.c
+│   │   │   ├── ft_isalpha.c
+│   │   │   ├── ft_isascii.c
+│   │   │   ├── ft_isdigit.c
+│   │   │   ├── ft_isprint.c
+│   │   │   ├── ft_itoa.c
+│   │   │   ├── ft_lstadd_back.c
+│   │   │   ├── ft_lstadd_front.c
+│   │   │   ├── ft_lstclear.c
+│   │   │   ├── ft_lstdelone.c
+│   │   │   ├── ft_lstiter.c
+│   │   │   ├── ft_lstlast.c
+│   │   │   ├── ft_lstmap.c
+│   │   │   ├── ft_lstnew.c
+│   │   │   ├── ft_lstsize.c
+│   │   │   ├── ft_memchr.c
+│   │   │   ├── ft_memcmp.c
+│   │   │   ├── ft_memcpy.c
+│   │   │   ├── ft_memmove.c
+│   │   │   ├── ft_memset.c
+│   │   │   ├── ft_putchar_fd.c
+│   │   │   ├── ft_putendl_fd.c
+│   │   │   ├── ft_putnbr_fd.c
+│   │   │   ├── ft_putstr_fd.c
+│   │   │   ├── ft_split.c
+│   │   │   ├── ft_strchr.c
+│   │   │   ├── ft_strdup.c
+│   │   │   ├── ft_striteri.c
+│   │   │   ├── ft_strjoin.c
+│   │   │   ├── ft_strlcat.c
+│   │   │   ├── ft_strlcpy.c
+│   │   │   ├── ft_strlen.c
+│   │   │   ├── ft_strmapi.c
+│   │   │   ├── ft_strncmp.c
+│   │   │   ├── ft_strnstr.c
+│   │   │   ├── ft_strrchr.c
+│   │   │   ├── ft_strtrim.c
+│   │   │   ├── ft_substr.c
+│   │   │   ├── ft_tolower.c
+│   │   │   ├── ft_toupper.c
+│   │   │   ├── get_next_line_bonus.c
+│   │   │   └── get_next_line_utils_bonus.c
+│   │   └── Makefile
+│   ├── objs
+│   │   ├── ft_format.o
+│   │   ├── ft_parse_and_handle_funcs.o
+│   │   ├── ft_printf_funcs.o
+│   │   ├── ft_printf.o
+│   │   ├── ft_ptr.o
+│   │   └── ft_utility_funcs.o
+│   ├── srcs
+│   │   ├── ft_format.c
+│   │   ├── ft_parse_and_handle_funcs.c
+│   │   ├── ft_printf_funcs.c
+│   │   ├── ft_printf.c
+│   │   ├── ft_ptr.c
+│   │   └── ft_utility_funcs.c
+│   └── Makefile
+```
+
+<br>
+
+## About
+
+<p align="justify">
+
+<p>
+<br>
+
+## Support Me
+
+<p align="justify">
+Remember to ⭐ the repository.
+If you want to support me:</p>
+
+<p align="center">
+<a href="https://ko-fi.com/fcorvaro"><img width="180" img align="center" src="https://github.com/f-corvaro/42.common_core/blob/main/.extra/support-me-ko-fi.svg"><alt=""></a>
+<a href="https://github.com/sponsors/f-corvaro"><img width="180" img align="center" src="https://github.com/f-corvaro/42.common_core/blob/main/.extra/support-me-github.svg"><alt=""></a>
+
+<br>
+
+## License
+<p align="center">
+<a href="https://choosealicense.com/licenses/mit/"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+<a href="https://opensource.org/licenses/"><img src="https://img.shields.io/badge/License-GPL%20v3-yellow.svg" alt="GPLv3 License"></a>
+<a href="http://www.gnu.org/licenses/agpl-3.0"><img src="https://img.shields.io/badge/license-AGPL-blue.svg" alt="AGPL License"></a>
+<br>
