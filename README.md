@@ -21,9 +21,9 @@ This is my static library, which encompasses the 42's project: get_next_line (on
 
 ## Running tests and features
 
-<a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="make" width="650" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/compile.gif">
+<a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="make" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/compile.gif">
 
-<a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="comment" width="650" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/about.gif">
+<a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="comment" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/about.gif">
 
 
 <br>
