@@ -15,7 +15,7 @@
 
 <p align="justify">
 
-This is my static library, which encompasses the 42's project: get_next_line (only the bonus functions), ft_printf (with all format bonuses), and libft (with bonus functions). Furthermore, I have defined my bool and other useful things that you can check into the code. All the functions have a comment to explain what they do. From the terminal, in the lib path, you can run the command ```make help``` to get an overview of the available commands in this library.
+This is my static library, which encompasses the 42's project: get_next_line (only the bonus functions), ft_printf (with all format bonuses), and libft (with bonus functions). Furthermore, I have defined my bool and other useful things that you can check into the code. All the functions have a comment to explain what it does. From the terminal, in the lib path, you can run the command ```make help``` to get an overview of the available commands in this library.
 
 <p>
 <br>
