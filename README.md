@@ -1,15 +1,23 @@
-# **My Static C Library**
+<h1 align="center">My static C library</h1>
 
-### Index
+<p align="center" style="text-decoration: none;">
+    <a href="https://github.com/f-corvaro/my_static_C_library"><img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/f-corvaro/my_static_C_library?color=blueviolet" /></a>
+    <a href="https://github.com/f-corvaro/my_static_C_library"><img alt="Code language count" src="https://img.shields.io/github/languages/count/f-corvaro/my_static_C_library?color=yellow" /></a>
+    <a href="https://github.com/f-corvaro/my_static_C_library"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/f-corvaro/my_static_C_library?color=blueviolet" /></a>
+    <a href="https://github.com/f-corvaro/my_static_C_library"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/f-corvaro/my_static_C_library?color=yellow" /></a>
+</p>
 
-- [**My Static C Library**](#my-static-c-library)
-		- [Index](#index)
-	- [About](#about)
-	- [Running tests and features](#running-tests-and-features)
-	- [Folder Structure](#folder-structure)
-	- [Author](#author)
-	- [Support Me](#support-me)
-	- [License](#license)
+<h3 align="center">Index</h3>
+
+<p align="center">
+  <a href="#my-static-c-library">1 - My Static C Library</a><br>
+  <a href="#about">2 - About</a><br>
+  <a href="#running-tests-and-features">3 - Running Tests and Features</a><br>
+  <a href="#folder-structure">4 - Folder Structure</a><br>
+  <a href="#support-me">5 - Support Me</a><br>
+  <a href="#license">6 - License</a><br>
+  <a href="#author">7 - Author</a><br>
+</p>
 
 ## About
 
@@ -186,19 +194,6 @@ This is the folder structure after the compiling:
 
 <br>
 
-## Author
-
-<p align="center"><a href="https://profile.intra.42.fr/users/fcorvaro"><img style="height:auto;" src="https://avatars.githubusercontent.com/u/102758065?v=4" width="100" height="100"alt=""></a>
-<p align="center">
-<a href="mailto:fcorvaro@student.42roma.it"><kbd>Email</kbd><alt=""></a>
-<a href="https://github.com/f-corvaro"><kbd>Github</kbd><alt=""></a>
-<a href="https://www.linkedin.com/in/f-corvaro/"><kbd>Linkedin</kbd><alt=""></a>
-<a href="https://42born2code.slack.com/team/U050L8XAFLK"><kbd>Slack</kbd><alt=""></a>
-
-<hr/>
-
-<br>
-
 ## Support Me
 
 <p align="justify">
@@ -217,3 +212,14 @@ If you want to support me:</p>
 <a href="https://opensource.org/licenses/"><img src="https://img.shields.io/badge/License-GPL%20v3-yellow.svg" alt="GPLv3 License"></a>
 <a href="http://www.gnu.org/licenses/agpl-3.0"><img src="https://img.shields.io/badge/license-AGPL-blue.svg" alt="AGPL License"></a>
 <br>
+
+## Author
+
+<p align="center"><a href="https://profile.intra.42.fr/users/fcorvaro"><img style="height:auto;" src="https://avatars.githubusercontent.com/u/102758065?v=4" width="100" height="100"alt=""></a>
+<p align="center">
+<a href="mailto:fcorvaro@student.42roma.it"><kbd>Email</kbd><alt=""></a>
+<a href="https://github.com/f-corvaro"><kbd>Github</kbd><alt=""></a>
+<a href="https://www.linkedin.com/in/f-corvaro/"><kbd>Linkedin</kbd><alt=""></a>
+<a href="https://42born2code.slack.com/team/U050L8XAFLK"><kbd>Slack</kbd><alt=""></a>
+
+<hr/>
