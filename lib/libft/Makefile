@@ -6,7 +6,7 @@
 #    By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/30 15:10:03 by fcorvaro          #+#    #+#              #
-#    Updated: 2023/11/15 14:55:12 by fcorvaro         ###   ########.fr        #
+#    Updated: 2024/02/13 17:03:13 by fcorvaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -93,7 +93,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 OBJS = $(addprefix $(OBJS_DIR)/, ${SRCS:%.c=%.o})
 
 # ------------  PHONY TARGETS  ----------------------------------------------- #
-.PHONY : all clean fclean re bonus help
+.PHONY : all clean fclean re bonus help norm
 
 # ------------  DEFAULT TARGET  ---------------------------------------------- #
 all: $(NAME)
@@ -109,23 +109,28 @@ $(BUILD_DIR):
 # ------------  LIBRARY CREATION TARGET  ------------------------------------- #
 $(NAME): $(OBJS) | $(BUILD_DIR)
 	@$(AR) $(NAME) $^
-	@echo "$(START)$(BOLD);$(ITALIC);$(G)m Created Successfully!$(END)"
-	@echo "$(START)$(BOLD);$(ITALIC);$(M)m fcorvaro's Lybrary.$(END)"
+	@echo "$(START)$(BOLD);$(ITALIC);$(G)m Compilation completed!$(END)"
+	@echo "$(START)$(BOLD);$(ITALIC);$(G)m libft with get_next_line created successfully!$(END)"
+	@echo "$(START)$(BOLD);$(ITALIC);$(M)m Author: fcorvaro$(END)"
 
 # ------------  OBJECT FILE CREATION TARGET  --------------------------------- #
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c | $(OBJS_DIR)
-	@echo "$(START)$(BOLD);$(ITALIC);$(Y)mCompiling $<$(END)"
+	@echo "$(START)$(BOLD);$(ITALIC);$(Y)mCompiling $< ...$(END)"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 # ------------  CLEAN TARGET  ------------------------------------------------ #
 clean:
-	@$(RM) -r $(OBJS_DIR)
-	@echo "$(START)$(BOLD);$(ITALIC);$(G)m Objectives cleaned $(END)"
+	@if [ -d "$(OBJS_DIR)" ]; then \
+		$(RM) -r $(OBJS_DIR); \
+		echo "$(START)$(BOLD);$(ITALIC);$(G)m Cleaned up object files. $(OBJS_DIR) has been removed. $(END)"; \
+	fi
 
 # ------------  FCLEAN TARGET  ----------------------------------------------- #
 fclean: clean
-	@$(RM) -r $(BUILD_DIR)
-	@echo "$(START)$(BOLD);$(ITALIC);$(G)m Build cleaned $(END)"
+	@if [ -d "$(BUILD_DIR)" ]; then \
+		$(RM) -r $(BUILD_DIR); \
+		echo "$(START)$(BOLD);$(ITALIC);$(G)m Cleaned up build files. $(BUILD_DIR) has been removed. $(END)"; \
+	fi
 
 # ------------  RE TARGET  --------------------------------------------------- #
 re : fclean
@@ -136,15 +141,26 @@ bonus: re
 
 # ------------  HELP TARGET  ------------------------------------------------- #
 help:
-	@echo "	$(START)$(BOLD);$(ITALIC);$(M)mfcorvaro's library: This is a special library that include libft and get_next_line$(END)"
-	@echo
-	@echo "	$(START)$(BOLD);$(ITALIC);$(Y)mmake [help | all | bonus | clean | fclean | re]$(END)"
-	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mall: compile the library and obtain libft.a. This is comprehends get_next_line bonus$(END)"
-	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mbonus: do the same thing of re, bonus functions are included in the mandatory project$(END)"
-	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mclean: remove object files$(END)"
-	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mfclean: remove object files and archive library$(END)"
-	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mhelp: displays informations$(END)"
-	@echo "		$(START)$(BOLD);$(ITALIC);$(FAINT);$(Y)mre: fclean and all$(END)"
+	@echo "$(START)$(BOLD);$(M)mUsage:$(END)"
+	@echo "  make [command]"
+	@echo ""
+	@echo "$(START)$(BOLD);$(M)mCommands:$(END)"
+	@echo "  $(START)$(BOLD);$(Y)mall$(END):     Compiles the library and generates libft.a, including the get_next_line bonus"
+	@echo "  $(START)$(BOLD);$(Y)mbonus$(END):  Performs the same actions as 're'"
+	@echo "  $(START)$(BOLD);$(Y)mclean$(END):  Removes all object files"
+	@echo "  $(START)$(BOLD);$(Y)mfclean$(END): Removes all object files and the archive library"
+	@echo "  $(START)$(BOLD);$(Y)mnorm$(END):   Checks the code against the 42 norm using Norminette"
+	@echo "  $(START)$(BOLD);$(Y)mhelp$(END):   Display this help message"
+	@echo "  $(START)$(BOLD);$(Y)mre$(END):     Performs 'fclean' and 'all'"
+
+# ------------  NORM TARGET  ------------------------------------------------- #
+norm:
+	@OUTPUT="$(shell norminette $(SRCS_DIR) | grep -v OK)"; \
+	if [ -z "$$OUTPUT" ]; then \
+		echo "$(START)$(BOLD);$(ITALIC);$(G)m Norminette check: $(END)$(START)$(BOLD);$(ITALIC);$(G)m All files are OK! $(END)"; \
+	else \
+		echo "$(START)$(BOLD);$(ITALIC);$(R)m Norminette check: $(END)$(START)$(BOLD);$(ITALIC);$(R)m Errors found: $$OUTPUT $(END)"; \
+	fi
 
 # ------------  INCLUDE DEPENDENCY FILES  ------------------------------------ #
 -include $(OBJS_DIR)/*.d
