@@ -1,5 +1,5 @@
 <h1 align="center">
-<a href="https://github.com/f-corvaro/MY_STATIC_C_LIBRARY"><img src="https://github.com/f-corvaro/GET_NEXT_LINE/blob/main/.other/mylib.png"></a>
+<a href="https://github.com/f-corvaro/my_static_C_library"><img src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/mylib.png"></a>
 </h1>
 
 <p align="center" style="text-decoration: none;">
