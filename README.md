@@ -1,4 +1,6 @@
-<h1 align="center">My static C library</h1>
+<h1 align="center">
+<a href="https://github.com/f-corvaro/MY_STATIC_C_LIBRARY"><img src="https://github.com/f-corvaro/GET_NEXT_LINE/blob/main/.other/mylib.png"></a>
+</h1>
 
 <p align="center" style="text-decoration: none;">
     <a href="https://github.com/f-corvaro/my_static_C_library"><img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/f-corvaro/my_static_C_library?color=blueviolet" /></a>
