@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 20:49:40 by fcorvaro          #+#    #+#             */
-/*   Updated: 2023/11/15 17:42:08 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/06/20 19:01:15 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,26 +16,42 @@
 
 /* ------------  APPLE SPECIFIC DEFINITIONS  -------------------------------- */
 # ifdef __APPLE__
-#  define NULLSTRING "(null)"
-#  define NULLPOINTER "0x0"
+#  ifndef NULLSTRING
+#   define NULLSTRING "(null)"
+#  endif
+#  ifndef NULLPOINTER
+#   define NULLPOINTER "0x0"
+#  endif
 
 /* ------------  NON-APPLE SPECIFIC DEFINITIONS  ---------------------------- */
 # else
-#  define NULLSTRING "(null)"
-#  define NULLPOINTER "(nil)"
+#  ifndef NULLSTRING
+#   define NULLSTRING "(null)"
+#  endif
+#  ifndef NULLPOINTER
+#   define NULLPOINTER "(nil)"
+#  endif
 # endif
 
 /* ------------  INT MAX DEFINITION  ---------------------------------------- */
-# define INT_MAX 2147483647
+# ifndef INT_MAX
+#  define INT_MAX 2147483647
+# endif
 
 /* ------------  INT min DEFINITION  ---------------------------------------- */
-# define INT_MIN -2147483648
+# ifndef INT_MIN
+#  define INT_MIN -2147483648
+# endif
 
 /* ------------  HEXADECIMAL UPPERCASE DEFINITION  -------------------------- */
-# define HEXAUP "0123456789ABCDEF"
+# ifndef HEXAUP
+#  define HEXAUP "0123456789ABCDEF"
+# endif
 
 /* ------------  HEXADECIMAL LOWERCASE DEFINITION  -------------------------- */
-# define HEXALOW "0123456789abcdef"
+# ifndef HEXALOW
+#  define HEXALOW "0123456789abcdef"
+# endif
 
 /* ------------  STANDARD ARGUMENTS LIBRARY  -------------------------------- */
 # include <stdarg.h>
@@ -47,8 +63,13 @@
 typedef int	t_bool;
 
 /* ------------  BOOLEAN CONSTANTS  ----------------------------------------- */
-# define TRUE 1
-# define FALSE 0
+# ifndef TRUE
+#  define TRUE 1
+# endif
+
+# ifndef FALSE
+#  define FALSE 0
+# endif
 
 /*
  * @brief Structure representing a format specifier in ft_printf.
