@@ -12,19 +12,24 @@
 <h3 align="center">Index</h3>
 
 <p align="center">
-  <a href="#my-static-c-library">1 - My Static C Library</a><br>
-  <a href="#about">2 - About</a><br>
-  <a href="#running-tests-and-features">3 - Running Tests and Features</a><br>
-  <a href="#folder-structure">4 - Folder Structure</a><br>
-  <a href="#support-me">5 - Support Me</a><br>
-  <a href="#author">6 - Author</a><br>
+  <a href="#library-overview">Library Overview</a><br>
+  <a href="#running-tests-and-features">Running tests and features</a><br>
+  <a href="#folder-structure-and-compilation">Folder Structure and Compilation</a><br>
+  <a href="#folder-structure-before-compiling">Folder Structure Before Compiling</a><br>
+  <a href="#support-me">Support Me</a><br>
+  <a href="#author">Author</a><br>
 </p>
 
-## About
+## Library Overview
 
 <p align="justify">
 
-This is my static library, which encompasses the 42's project: get_next_line (only the bonus functions), ft_printf (with all format bonuses), and libft (with bonus functions). Furthermore, I have defined my bool and other useful things that you can check into the code. All the functions have a comment in Doxygen style to explain what it does. From the terminal, in the lib path, you can run the command ```make help``` to get an overview of the available commands in this library.
+This static library includes the following 42 projects: `get_next_line` (bonus functions only), `ft_printf` (with all format bonuses), and `libft` (with bonus functions). Additionally, custom boolean types and other useful utilities are defined within the code. Each function is documented with Doxygen-style comments for clarity. 
+
+To see the available commands for this library, navigate to the library path in the terminal and run:
+```sh
+make help
+```
 
 <p>
 <br>
@@ -35,27 +40,22 @@ This is my static library, which encompasses the 42's project: get_next_line (on
 
 <a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="comment" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/about.gif">
 
-
 <br>
 
-
-## Folder Structure
+## Folder Structure and Compilation
 
 <p align="justify">
 
-The folder structure is very easy, and the Makefile is made with the purpose of having repeatable and easily implemented rules.
+The folder structure is straightforward, and the Makefile is designed for repeatable and easily implemented rules.
 
-- All the sources are stored in the srcs folder.
+- All source files are stored in the `srcs` folder.
+- The header files are stored in the `include` folder.
+- The compiled library (`library.a`) is stored in the `build` folder.
+- The object files (`files.o`) are stored in the `objs` folder.
 
-- The header is stored in the include folder.
+The `build` and `objs` folders, along with their contents, are created only after compiling.
 
-- The library.a is stored in the build folder.
-
-- The files.o are stored in  the objs folder.
-
-The last two folders and files are created only after compiling.
-
-This is the folder structure before compiling:
+### Folder Structure Before Compiling
 
 ```
 .
@@ -122,82 +122,10 @@ This is the folder structure before compiling:
 └── Makefile
 ```
 
-This is the folder structure after the compiling:
-
-```
-.
-├── lib
-│   ├── build
-│   │   └── libftprintf.a
-│   ├── include
-│   ├── libft
-│   │   ├── build
-│   │   │   └── libft.a
-│   │   ├── include
-│   │   ├── objs
-│   │   │   ├── ft_atoi.o
-│   │   │   ├── ft_bzero.o
-│   │   │   ├── ft_calloc.o
-│   │   │   ├── ft_isalnum.o
-│   │   │   ├── ft_isalpha.o
-│   │   │   ├── ft_isascii.o
-│   │   │   ├── ft_isdigit.o
-│   │   │   ├── ft_isprint.o
-│   │   │   ├── ft_itoa.o
-│   │   │   ├── ft_lstadd_back.o
-│   │   │   ├── ft_lstadd_front.o
-│   │   │   ├── ft_lstclear.o
-│   │   │   ├── ft_lstdelone.o
-│   │   │   ├── ft_lstiter.o
-│   │   │   ├── ft_lstlast.o
-│   │   │   ├── ft_lstmap.o
-│   │   │   ├── ft_lstnew.o
-│   │   │   ├── ft_lstsize.o
-│   │   │   ├── ft_memchr.o
-│   │   │   ├── ft_memcmp.o
-│   │   │   ├── ft_memcpy.o
-│   │   │   ├── ft_memmove.o
-│   │   │   ├── ft_memset.o
-│   │   │   ├── ft_putchar_fd.o
-│   │   │   ├── ft_putendl_fd.o
-│   │   │   ├── ft_putnbr_fd.o
-│   │   │   ├── ft_putstr_fd.o
-│   │   │   ├── ft_split.o
-│   │   │   ├── ft_strchr.o
-│   │   │   ├── ft_strdup.o
-│   │   │   ├── ft_striteri.o
-│   │   │   ├── ft_strjoin.o
-│   │   │   ├── ft_strlcat.o
-│   │   │   ├── ft_strlcpy.o
-│   │   │   ├── ft_strlen.o
-│   │   │   ├── ft_strmapi.o
-│   │   │   ├── ft_strncmp.o
-│   │   │   ├── ft_strnstr.o
-│   │   │   ├── ft_strrchr.o
-│   │   │   ├── ft_strtrim.o
-│   │   │   ├── ft_substr.o
-│   │   │   ├── ft_tolower.o
-│   │   │   ├── ft_toupper.o
-│   │   │   ├── get_next_line_bonus.o
-│   │   │   └── get_next_line_utils_bonus.o
-│   │   ├── srcs
-│   │   └── Makefile
-│   ├── objs
-│   │   ├── ft_format.o
-│   │   ├── ft_parse_and_handle_funcs.o
-│   │   ├── ft_printf_funcs.o
-│   │   ├── ft_printf.o
-│   │   ├── ft_ptr.o
-│   │   └── ft_utility_funcs.o
-│   ├── srcs
-│   └── Makefile
-```
-
-<br>
-
 ## Support Me
 
 <p align="justify">
+
 Remember to ⭐ the repository.
 If you want to support me:</p>
 
