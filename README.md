@@ -125,9 +125,7 @@ The `build` and `objs` folders, along with their contents, are created only afte
 ## Support Me
 
 <p align="justify">
-
-Remember to ⭐ the repository.
-If you want to support me:</p>
+If you find this repository helpful, please consider starring it. Your support is greatly appreciated!</p>
 
 <p align="center">
 <a href="https://ko-fi.com/fcorvaro"><img width="180" img align="center" src="https://github.com/f-corvaro/42.common_core/blob/main/.extra/support-me-ko-fi.svg"><alt=""></a>
