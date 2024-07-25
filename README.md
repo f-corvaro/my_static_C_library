@@ -12,12 +12,11 @@
 <h3 align="center">Index</h3>
 
 <p align="center">
-  <a href="#library-overview">Library Overview</a><br>
-  <a href="#running-tests-and-features">Running tests and features</a><br>
-  <a href="#folder-structure-and-compilation">Folder Structure and Compilation</a><br>
-  <a href="#folder-structure-before-compiling">Folder Structure Before Compiling</a><br>
-  <a href="#support-me">Support Me</a><br>
-  <a href="#author">Author</a><br>
+ <a href="#library-overview">Library Overview</a><br>
+ <a href="#running-tests-and-features">Running tests and features</a><br>
+ <a href="#folder-structure-and-compilation">Folder Structure and Compilation</a><br>
+ <a href="#support-and-contributions">Support and Contributions</a><br>
+ <a href="#author">Author</a><br>
 </p>
 
 ## Library Overview
@@ -54,8 +53,6 @@ The folder structure is straightforward, and the Makefile is designed for repeat
 - The object files (`files.o`) are stored in the `objs` folder.
 
 The `build` and `objs` folders, along with their contents, are created only after compiling.
-
-### Folder Structure Before Compiling
 
 ```
 .
@@ -122,10 +119,10 @@ The `build` and `objs` folders, along with their contents, are created only afte
 └── Makefile
 ```
 
-## Support Me
+## Support and Contributions
 
-<p align="justify">
-If you find this repository helpful, please consider starring it. Your support is greatly appreciated!</p>
+<p align="center">
+If you find this repository helpful, please consider starring it to show your support.. Your support is greatly appreciated!</p>
 
 <p align="center">
 <a href="https://ko-fi.com/fcorvaro"><img width="180" img align="center" src="https://github.com/f-corvaro/42.common_core/blob/main/.extra/support-me-ko-fi.svg"><alt=""></a>
