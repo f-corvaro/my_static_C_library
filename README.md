@@ -35,10 +35,13 @@ make help
 
 ## Running tests and features
 
-<a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="make" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/compile.gif">
-
-<a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="comment" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/about.gif">
-
+<p align="center">
+ <a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="make" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/compile.gif">
+<p>
+    
+<p align="center">
+ <a href="https://github.com/f-corvaro/my_static_C_library/tree/main"><img align="center" alt="comment" src="https://github.com/f-corvaro/my_static_C_library/blob/main/.other/about.gif">
+<p>
 <br>
 
 ## Folder Structure and Compilation
